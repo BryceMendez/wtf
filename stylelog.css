@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(shit.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    color: black;
+    border: 2px solid orange;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px orange;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: white
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid orange;
+    border-radius: 40px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+
+}
+
+.a img{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5;
+    margin: -15px 0 15px;
+    color: white;
+}
+
+.remember-forgot label input{
+    accent-color: #1e1e1e;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: orange;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: orange;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px orange;
+    cursor:  ponter;
+    color: #1e1e1e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+    color: white;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+#shit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 60%;
+}
+.yo a{
+    text-decoration: none;
+    color: white;
+}
+
+.yes, .no {
+    width: 45%;
+    height: 45px;
+    background: orange;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px orange;
+    cursor: pointer;
+    color: #1e1e1e;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes a, .no a {
+    text-decoration: none;
+    color: white;
+}

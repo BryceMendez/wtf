@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Website ECommerce (Advantache)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="logo-container">
+            <a href="#" class="logo"><img src="logo.png" width="70px" height="50px" class="logo"></a>
+            <div class="logo-text">
+                <h6>GAMING RIFT</h6>
+                <h6>MARKETPLACE</h6>
+            </div>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><img src="hue.png" width="40px" height="40px"></a>
+        </div>
+        <div id="bar" onclick="toggleSidebar()"> 
+            <img src="bar.png" width="40px" height="40px">
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="trading.html">Top Ups</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><img src="hue.png" width="30px" height="25px"></a></li>
+                <a href="#" id="close-sidebar" onclick="toggleSidebar()"><img src="close.png" width="30px" height="25px"></a>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h4>#Let's Talk</h4>
+        <h6>LEAVE US A MESSAGE, We love to hear from you!</h6>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><img src="minus.png" width="5px" height="70px"></a></td>
+                    <td><img src="d3.jpg" alt="img"></td>
+                    <td>Curse of Thee</td>
+                    <td>1,500 pesos</td>
+                    <td><input class="lol" type="number" value="1"></td>
+                    <td>1,500 pesos</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="minus.png" width="5px" height="70px"></a></td>
+                    <td><img src="d1.jpg" alt="img"></td>
+                    <td>That Witch Hungers</td>
+                    <td>5,000 pesos</td>
+                    <td><input class="lol" type="number" value="1"></td>
+                    <td>5,000 pesos</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="minus.png" width="5px" height="70px"></a></td>
+                    <td><img src="z11.jpg" alt="img"></td>
+                    <td>Arumplate Robes</td>
+                    <td>60,000 pesos</td>
+                    <td><input class="lol" type="number" value="1"></td>
+                    <td>60,000 pesos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>66,500 Pesos</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>66,500 Pesos</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logo.png" width="90px" height="70px">
+            <h5>CONTACT</h5>
+            <p><strong>Adress: </strong> University of Cebu - Banilad</p>
+            <p><strong>Phone: </strong> 09-6858-6110</p>
+            <p><strong>Hours: </strong> 24 Hours Open</p>
+            <div class="follow">
+                <h5>Follow us</h5>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100009844337998">
+                        <img src="fb.png" width="30px" height="30px">
+                    </a>
+                    <a href="https://discord.gg/VXDAPgeF">
+                        <img src="discord.png" width="30px" height="30px">
+                    </a>
+                    <a href="https://www.instagram.com/yce_mndz/">
+                        <img src="insta.png" width="30px" height="30px">
+                    </a>
+                    <a href="https://www.pinterest.ph/YCEY_B/">
+                        <img src="pinterest.png" width="30px" height="30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h5>ABOUT</h5>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h5>MY ACCOUNT</h5>
+            <a href="#">Sign In</a>
+            <a href="#">View cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h5>GET MORE INFORMATION</h5>
+            <p> Visit our Facebook Page </p>
+            <div class="row">
+                <img src="nah.png" width="50px" height="50px">
+                <img src="noh.png" width="50px" height="50px">
+            </div>
+            <p>your trusted and secure gaming shop</p>
+            <img src="control.png" width="50px" height="50px">
+        </div>
+
+        <div class="copyright">
+
+            <p>@2023.FinalProject/HTML/CSS/JAVA/WebyDevy.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
